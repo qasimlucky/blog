@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "My Remotion video",
   "scripts": {
-    "start": "remotion preview",
-    "build": "npx ts-node src/scheduler.ts",
+    "start": "node init && remotion preview",
+    "build": "node init && npx ts-node src/scheduler.ts",
     "upgrade": "remotion upgrade",
     "test": "eslint src --ext ts,tsx,js,jsx && tsc"
   },
